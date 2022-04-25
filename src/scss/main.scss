@@ -9,9 +9,8 @@
 @import "~@fancyapps/ui";
 //@import "~fancybox/dist/scss/jquery.fancybox.scss";
 
-//nice select
-@import "~jquery-nice-select/scss/nice-select";
-
+// Select2
+@import '../../node_modules/select2/dist/css/select2.min.css';
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss

@@ -35,10 +35,13 @@ $(function () {
 
 // ===========================================================================
 
-//nice select
-require('jquery-nice-select');
-jQuery(document).ready(function() {
-    jQuery('select').niceSelect();
+
+// Select2 JS
+$(document).ready(function() {
+    $('.select-dropdown').select2();
+    $('.product-option, .disable-search').select2({
+            minimumResultsForSearch: -1
+    });
 });
 
 // fancy box
