@@ -11695,6 +11695,21 @@ var App = /*#__PURE__*/function () {
   _createClass(App, [{
     key: "init",
     value: function init() {
+      // hero slider
+      $('.hero-slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        slidesToShow: 1,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            arrows: true
+          }
+        }]
+      });
       $('.large-slider').slick({
         dots: false,
         arrows: false,

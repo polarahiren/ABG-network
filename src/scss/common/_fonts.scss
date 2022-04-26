@@ -7,19 +7,7 @@
       url('../fonts/Apercu-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Apercu Mono';
-  src: url('../fonts/Apercu-Mono.eot');
-  src: url('../fonts/Apercu-Mono.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Apercu-Mono.woff2') format('woff2'),
-      url('../fonts/Apercu-Mono.woff') format('woff'),
-      url('../fonts/Apercu-Mono.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+font-display: swap;
 }
 
 @font-face {
