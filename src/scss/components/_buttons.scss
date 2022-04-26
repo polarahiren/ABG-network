@@ -1,0 +1,51 @@
+[type=button]{
+    -webkit-appearance: none;
+   -moz-appearance: none;
+    appearance: none;
+}
+
+.btn{
+    @include generate-transition(all, 400ms, ease);
+    padding: 18px 20px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    min-width: 205px;
+    border:1px solid;
+    border-radius: 30px;
+}
+
+.btn-primary{
+    border-color: $primary;
+    color: $secondary;
+
+    &:hover{
+        background-color: $secondary;
+        border-color: $secondary;
+        color: $white;
+    }
+}
+
+.btn-secondary{
+    background-color: $secondary;
+    border-color: $secondary;
+    color: $white;
+
+    &:hover{
+        background-color: $primary;
+        border-color: $primary;
+        color: $secondary;
+    }
+}
+
+.btn-white{
+    background-color: transparent;
+    border-color: $white;
+    color: $white;
+
+    &:hover{
+        background-color: $white;
+        border-color: $white;
+        color: $secondary;
+    }
+}
