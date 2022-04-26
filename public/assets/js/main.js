@@ -11706,21 +11706,7 @@ var App = /*#__PURE__*/function () {
         responsive: [{
           breakpoint: 768,
           settings: {
-            arrows: true
-          }
-        }]
-      });
-      $('.large-slider').slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 300,
-        autoplay: true,
-        slidesToShow: 1,
-        responsive: [{
-          breakpoint: 768,
-          settings: {
-            arrows: true
+            adaptiveHeight: true
           }
         }]
       });

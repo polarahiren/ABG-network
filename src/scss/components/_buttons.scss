@@ -49,3 +49,32 @@
         color: $secondary;
     }
 }
+
+.btn-with-icon{
+    background-color: transparent;
+    border: none;
+    color: $white;
+    font-size: $bodyXS;
+    letter-spacing: 1.2px;
+
+    span{
+        width: 26px;
+        height: 26px;
+        background-color: $primary;
+        transition: 0.4s all ease-in-out;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(0px);
+        color: $secondary;
+    }
+
+    &:hover{
+        span{
+            transform: translateX(10px);
+            color: $white;
+            background-color: $secondary;
+        }
+    }
+}

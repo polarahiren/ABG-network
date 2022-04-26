@@ -77,4 +77,10 @@
         }
     }
 }
+
+.get-started-section{
+    @include media-breakpoint-up(md) {
+        transform: translateY(-130px);
+    }
+}
 // END home page
