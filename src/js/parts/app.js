@@ -50,6 +50,12 @@ export class App{
               settings: {
                   slidesToShow: 3,
               }
+          },
+          {
+              breakpoint: 480,
+              settings: {
+                  slidesToShow: 2,
+              }
           }
       ]
   });

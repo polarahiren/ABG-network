@@ -1,5 +1,4 @@
 body{
-    background-color: #F8F8F8;
     font-family: 'Apercu';
     font-weight: 300;
 }
@@ -49,6 +48,9 @@ p.error-message {
     border-radius: 999px;
 }
 
+.bg-gray-light{
+    background-color: #F8F8F8;
+}
 
 /* nice select */
 .nice-select {
