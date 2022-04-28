@@ -180,3 +180,9 @@
         margin: 0 auto;
     }
 }
+
+.slider-overflow-visable{
+    .slick-list {
+        overflow: visible;
+    }
+}

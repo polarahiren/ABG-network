@@ -109,3 +109,49 @@
     }
 }
 /* END insights card */
+
+
+// blog card css
+
+.news-card{
+    .card-img{
+        height: 340px;
+        border-radius: 5px;
+        @include media-breakpoint-down(md) {
+            height: 220px;
+        }
+    }
+
+    .body-card{
+        h3{
+            font-size: 26px;
+            line-height: 47px;
+            letter-spacing: -0.52px;
+            @include media-breakpoint-down(md) {
+                font-size: 25px;
+                line-height: 33px;
+            }
+        }
+    }
+    
+    .icon-btn{
+        width: 35px;
+        height: 35px;
+        background-color: $primary;
+        color: $secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        transition: 0.4s all ease-in-out;
+    }
+
+    &:hover{
+        .icon-btn{
+            background-color: $secondary;
+            color: $white;
+        }
+    }
+}
+
+// END blog card css

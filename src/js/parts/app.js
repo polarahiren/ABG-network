@@ -30,7 +30,7 @@ export class App{
       arrows: false,
       infinite: true,
       speed: 300,
-    //   autoplay: true,
+      autoplay: true,
       slidesToShow: 1,
       responsive: [
           {
@@ -41,7 +41,6 @@ export class App{
           }
       ]
   });
-
 
   /* related products slider */
   $('.logos-slider').slick({
@@ -81,6 +80,24 @@ export class App{
   });
 
 
+    // news  slider
+    $('.news-slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                  slidesToShow: 1,
+                }
+            }
+        ]
+    });
+  
 
   }
 
