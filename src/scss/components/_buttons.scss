@@ -78,3 +78,16 @@
         }
     }
 }
+
+
+.icon-btn{
+    width: 35px;
+    height: 35px;
+    background-color: $primary;
+    color: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: 0.4s all ease-in-out;
+}
