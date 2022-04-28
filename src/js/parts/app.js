@@ -16,7 +16,27 @@ export class App{
           {
               breakpoint: 768,
               settings: {
-                adaptiveHeight: true
+                adaptiveHeight: true,
+                dots: false,
+              }
+          }
+      ]
+  });
+
+
+    // testimonial slider
+    $('.testimonial-slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+    //   autoplay: true,
+      slidesToShow: 1,
+      responsive: [
+          {
+              breakpoint: 768,
+              settings: {
+                adaptiveHeight: true,
               }
           }
       ]

@@ -96,7 +96,7 @@
             button {
                 padding: 0px;
                 height: 2px;
-                width: 18px;
+                width: 27px;
                 background: $white;
                 opacity: 0.3;
                 transition: 0.2s all ease-in-out;
@@ -108,7 +108,7 @@
 
             &.slick-active {
                 button {
-                    width: 25px;
+                    width: 40px;
                     background: $white;
                     opacity: 1;
                 }
