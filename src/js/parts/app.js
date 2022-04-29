@@ -103,6 +103,7 @@ export class App{
         dots: false,
         arrows: false,
         infinite: false,
+        autoplay: true,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,

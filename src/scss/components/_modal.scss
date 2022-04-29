@@ -130,10 +130,15 @@
 
 
 .team-modal{
+    @include media-breakpoint-down(md) {
+        background: $white;
+    }
+
     .modal-dialog{
         max-width: 1000px;
         @include media-breakpoint-down(md) {
             margin: 0px;
+            align-items: flex-start;
         }
 
         @include media-breakpoint-up(md) {
@@ -141,6 +146,12 @@
         }
     }
     .modal-content{
+        border: none;
+
+        @include media-breakpoint-down(md) {
+            border-radius: 0px;
+        }
+
         @include media-breakpoint-up(md) {
             border-radius: 5px;
             overflow: hidden;
@@ -167,11 +178,35 @@
             }
         }
     }
+
+    .team-member-profile-info{
+        font-size: 15px;
+        line-height: 24px;
+    }
+
     .btn-close{
         right: 20px;
         top: 20px;
         z-index: 9;
+
+        &:hover{
+            opacity: 1;
+            background: $primary;
+        }
     }
+}
+
+.btn-close{
+    background: $secondary;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: absolute;
+    opacity: 1;
+    transition: 0.2s all ease-in-out;
 }
 
 
