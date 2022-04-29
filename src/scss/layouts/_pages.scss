@@ -274,6 +274,18 @@
         box-shadow: 0 3px 36px #0000001A;
     }
 }
+
+.team-section{
+    @include media-breakpoint-up(md) {
+        .-mb-1{
+            margin-bottom: -30px;
+        }
+
+        .-mt-1 img{
+            margin-top: -40px;
+        }
+    }
+}
 // END who we are page
 
 
