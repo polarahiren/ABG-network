@@ -32,6 +32,14 @@
         font-size: 30px;
     }
     @include media-breakpoint-down(md) {
+        padding:20px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        background: -moz-linear-gradient(bottom, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.40) 6%, rgba(0,0,0,0.35) 30%, rgba(0,0,0,0.35) 49%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.40) 0%,rgba(0,0,0,0.40) 6%,rgba(0,0,0,0.35) 30%,rgba(0,0,0,0.35) 49%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+
         .btn-with-icon{
             font-size: $bodyS;
             letter-spacing: 1.4px;
