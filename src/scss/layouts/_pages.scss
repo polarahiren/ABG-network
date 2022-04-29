@@ -219,4 +219,55 @@
 
 // END home page
 
+// who we are page
+.hero-section{
+    img.hero-shadow-img {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: auto;
+        height: calc(100% + 120px);
+        right: 0%;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    .container{
+        color: $dark;
+
+        @include media-breakpoint-up(md) {
+            color: $white;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+
+        h1{
+            font-size: 45px;
+            font-weight: 500;
+            @include media-breakpoint-up(md) {
+                font-size: 70px;
+            }
+        }
+        p{
+            line-height: 28px;
+            @include media-breakpoint-down(md) {
+                color: $secondary;
+                -webkit-line-clamp: 5;
+            }
+        }
+    }
+
+    img{
+        height: 330px;
+        object-fit: cover;
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            height: 710px;
+        }
+    }
+}
+// END who we are page
+
 
