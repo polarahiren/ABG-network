@@ -10,6 +10,21 @@
 font-display: swap;
 }
 
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('../fonts/Apercu-Regular.eot');
+    src: url('../fonts/Apercu-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Apercu-Regular.woff2') format('woff2'),
+        url('../fonts/Apercu-Regular.woff') format('woff'),
+        url('../fonts/Apercu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 @font-face {
   font-family: 'Apercu';
   src: url('../fonts/Apercu-Medium.eot');
