@@ -639,7 +639,7 @@
 .service-menu{
     @include media-breakpoint-down(lg){
         position: sticky;
-        top: 90px;
+        top: 100px;
         left: 0;
         background: $white;
         padding: 15px 10px;
