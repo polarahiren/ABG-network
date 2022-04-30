@@ -78,9 +78,13 @@ body.header-transparent {
         }
     }
 
-    .logo.navbar-brand svg,
+    .logo.navbar-brand,
     .navbar-toggler {
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-between(md, lg) {
+            color: $white;
+        }
+        
+        @include media-breakpoint-down(md) {
             color: $secondary;
         }
     }
