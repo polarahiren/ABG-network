@@ -1,7 +1,9 @@
-.menu-contact-btn {
-
-
-    @include media-breakpoint-down(xxl) {}
+header {
+    @include media-breakpoint-up(xxl) {
+        .container{
+            max-width: 1420px;
+        }
+    }
 }
 
 

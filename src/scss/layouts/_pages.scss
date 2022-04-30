@@ -429,9 +429,6 @@
     }
 
     @include media-breakpoint-down(md) {
-        .container{
-            background-color: $primary;
-        }
         .news-box{
             border-radius: 0px;
         }
@@ -477,7 +474,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 6%, rgba(0, 0, 0, 0.55) 30%, rgba(0, 0, 0, 0.35) 49%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 6%, rgba(0, 0, 0, 0.45) 30%, rgba(0, 0, 0, 0.25) 49%, rgba(0, 0, 0, 0) 100%);
     z-index: 0;
 
     @include media-breakpoint-down(md) {
