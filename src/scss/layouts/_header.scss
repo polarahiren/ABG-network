@@ -1,16 +1,9 @@
 
 .menu-contact-btn{
-    padding: 16px 32px 15px;
-    font-size: 12px;
-    letter-spacing: 1.8px;
-    line-height: 16px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: 0.4s all ease-in-out;
-    border-radius: 4px;
+    
 
     @include media-breakpoint-down(xxl) {
-        padding: 13px 15px;
+        
     }
 }
 
@@ -23,39 +16,30 @@ header {
     .navbar{
         @include media-breakpoint-down(lg) {
             button{
-                color: #000000;
+                color: $secondary;
             }
         }
-        ul li a.menu-item{
-            color: $black;
-            letter-spacing: 1.8px;
-            text-transform: uppercase;
+        ul li a.menu-item:not(.btn){
+            color: $secondary;
+            text-transform: capitalize;
             font-weight: 400;
             @include media-breakpoint-down(lg) {
-                font-size: 25px;
+                font-size: 32px;
                 line-height: 1.3;
-                text-transform: capitalize;
-                letter-spacing: 0px;
-                font-family: 'Prata-Regular';
-            }
-
-            &.menu-contact-btn{
-                color: #ffffff;
-                background-color: #000000;
-                border-color: #000000;
+                font-weight: 500;
             }
         }
 
         .logo{
-            color: $black;
+            color: $secondary;
             svg{
                 transition: 0.4s all ease-in-out;
-                max-width: 135px;
-                height: 100px;
+                max-width: 165px;
+                height: 70px;
 
                 @include media-breakpoint-down(lg) {
-                    max-width: 130px;
-                    height: 82px;
+                    max-width: 140px;
+                    height: 65px;
                     width: 100%;
                 }
             }
@@ -81,9 +65,7 @@ body.header-transparent{
         .navbar{
             ul li {
                 a.menu-contact-btn{
-                    color: $black;
-                    background-color: $white;
-                    border-color: $white;
+                    
                 }
             }
         }
@@ -125,8 +107,8 @@ body .header-fixed {
             
             .logo{
                 svg{
-                    max-width: 100px;
-                    height: 70px;
+                    max-width: 140px;
+                    height: 65px;
                 }
             }
         }
@@ -138,7 +120,7 @@ body .header-fixed {
 
             .logo{
                 svg{
-                    max-width: 110px;
+                    max-width: 135px;
                     height: 70px;
                 }
             }
@@ -161,26 +143,24 @@ body.fixed-bg {
             background-color: $white;
             
             .logo{
-                color: $black;
+                color: $secondary;
             }
         }
 
         @include media-breakpoint-up(lg) {
             background-color: $white;
-            ul li a{
-                color: $black !important;
+            ul li a:not(.btn){
+                color: $secondary !important;
             }
 
-            .logo{
-                color: $black !important;
-            }
+            // .logo{
+            //     color: $black !important;
+            // }
         }
         
         ul li {
             a.menu-contact-btn{
-                color: $white !important;
-                background-color: $black !important;
-                border-color: $black !important;
+                
             }
         }
     }
@@ -476,5 +456,25 @@ body.fixed-bg {
 @include media-breakpoint-up(lg) {
     a.menu-item.active{
         opacity: 0.4;
+    }
+}
+
+.menu-social-icons{
+    li{
+        margin-right: 12px;
+        a{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(81 90 104 / 30%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $secondary;
+    
+            svg{
+                width: 24px;
+                height: 24px;
+            }
+        }
     }
 }
