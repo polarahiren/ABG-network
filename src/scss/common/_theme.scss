@@ -59,107 +59,29 @@ p.error-message {
     background-color: #F8F8F8;
 }
 
-/* nice select */
-.nice-select {
-    border-color: transparent;
-    height: auto;
-    padding-right: 30px;
-    padding-left: 10px;
-
-    &:hover,
-    &:focus,
-    &.open{
-        border-color: transparent;
-    }
-    @include media-breakpoint-down(md) {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    span.current {
-        padding: 0px;
-        font-size: 15px;
-        -webkit-box-orient: vertical;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        color: $primary;
-
-        @include media-breakpoint-down(md) {
-            font-size: 14px;
-        }
-    }
-
-    &:after {
-        content: "";
-        border-bottom: 6px solid $primary;
-        border-right: 6px solid transparent;
-        border-left: 6px solid transparent;
-        transform: rotate(180deg) translateX(10px);
-        right: 15px;
-    }
-
-    &.open:after {
-        transform: rotate(0deg) translateX(0px);
-        right: 19px;
-    }
-
-    .list {
-        width: 100%;
-        min-width: 150px;
-        box-shadow: 0px 10px 26px rgb(25 25 25 / 40%);
-        z-index: 200;
-
-        li {
-            padding: 10px 15px;
-            color: $primary;
-            text-transform: capitalize;
-        }
-    }
-
-    .option:hover {
-        background-color: $primary !important;
-    }
-
-    .option:not(.selected):hover {
-        color: $white;
-    }
-
-    .option.selected {
-        background-color: $primary !important;
-        color: $white !important;
-    }
-
-    &:hover {
-        .option.selected:not(:hover) {
-            background-color: $primary !important;
-        }
-    }
-}
-
-.last-filter{
-    .nice-select .list{
-        right: 0px;
-        left: auto;
-    }
-}
-
 /* input form css */
 .form-control{
-    background: $white;
-    line-height: 2;
+    background: #EBEBEB65;
     border: 1px solid transparent;
-    font-size: 15px;
-    padding: 10px 1.5rem;
+    font-size: 14px;
+    color: $dark;
+    padding: 10px 15px;
+    transition: 0.2s all ease-in-out;
+    line-height: 1.7;
+    border-radius: 5px;
 
     &::placeholder{
-        color: #141414;
+        color: $dark;
+
+        @include media-breakpoint-down(md) {
+            color: rgb(44 54 70 / 30%);
+        }
     }
 
     &:focus{
+        border: 1px solid rgb(44 54 70 / 50%);
         box-shadow: none;
+        background: #EBEBEB65;
     }
 }
 

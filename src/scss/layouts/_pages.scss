@@ -526,3 +526,76 @@
     }
 }
 // news detail page
+
+
+// contact page
+.map-section{
+    @include media-breakpoint-down(md) {
+        img.map-img{
+            height: 400px;
+        }
+    }
+}
+
+.contact-section{
+    img.hero-shadow-img {
+        position: absolute;
+        top: -50px;
+        z-index: -1;
+        width: auto;
+        height: 800px;
+        right: 0%;
+
+        @include media-breakpoint-between(md,lg) {
+            height: 600px;
+        }
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    h2{
+        @include media-breakpoint-down(md) {
+            font-size: 30px;
+        }
+    }
+
+    .select-contact-form{
+        label{
+            input:checked + span{
+                background-color: $primary;
+                color: $secondary;
+                border-color: $primary;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.contact-us{
+    a{
+        font-size: 22px;
+        font-weight: 400;
+
+        .icon{
+            width: 72px;
+            height: 72px;
+            background-color: $primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            margin: 0 auto;
+
+            img{
+                width: 37px;
+            }
+        }
+    }
+    .small-label{
+        font-size: 14px;
+        border-bottom: 1px solid $secondary;
+    }
+}
+// END contact page
