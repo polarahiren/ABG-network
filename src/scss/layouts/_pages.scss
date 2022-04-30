@@ -290,16 +290,19 @@
 
 
 // testimonial page
-.hero-testimonial{
+.bg-location{
     background-image: url("../images/general/location-bg-icons.svg");
     background-repeat: no-repeat;
     background-position: top -40px right 20px;
-    background-size: contain;
+    background-size: 750px;
 
     @include media-breakpoint-down(md) {
-        background-position: top 70px right -200px;
+        background-position: top 70px right -160px;
+        background-size: 400px;
     }
+}
 
+.hero-testimonial{
     h2{
         font-size: 45px;
         
@@ -599,3 +602,92 @@
     }
 }
 // END contact page
+
+
+
+// policy page
+
+// Privacy Container
+@include media-breakpoint-up(xxl){
+    .privacy-section{
+        .container {
+            max-width: 1420px;
+        }
+    }
+}
+
+.privacy-section{
+    h3.subheading{
+        padding-top: 80px;
+        @include media-breakpoint-down(md){
+            padding-top: 50px;
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        .text-title{
+            font-size: 28px;
+        }
+        
+        h3{
+            font-size: 24px;
+            padding-top: 50px;
+        }
+    }
+}
+
+.service-menu{
+    @include media-breakpoint-down(lg){
+        position: sticky;
+        top: 90px;
+        left: 0;
+        background: $white;
+        padding: 15px 10px;
+    }
+}
+
+.services-lists-group {
+    position: sticky;
+    top: 150px;
+    @include media-breakpoint-up(lg){
+        padding: 0px 0px 4px 0px;
+        margin-bottom: 16px;
+    }
+    @include media-breakpoint-down(md){
+        overflow-x: auto;
+    }
+
+    .list-group-item{
+        font-size: 20px;
+        border-color: $dark;
+        border-style: solid;
+        border-width: 0px;
+        padding: 0;
+        background-color: transparent !important;
+        color: $dark;
+        line-height: 25px;
+        opacity: .5;
+        white-space: nowrap;
+        transition: 0.2s all ease-in-out;
+        text-transform: capitalize;
+
+        @include media-breakpoint-up(md){
+            white-space: nowrap;
+        }
+        @include media-breakpoint-down(md){
+            font-weight: 500;
+        }
+        &.active{
+            border-width: 0px 0px 0px 2px;
+            padding: 0px 0px 0px 8px;
+            opacity: 1;
+        }
+    }
+}
+
+.border-black{
+    border-color: $black !important;
+}
+
+
+// policy page

@@ -123,3 +123,20 @@ $(document).ready(function(){
 });
 
 // END tab filter js
+
+
+// scroll offset js
+var targetScriollOffset = 0;
+jQuery('[data-scroll="true"]').click(function (e) {
+    e.preventDefault();
+    var target = jQuery(jQuery(this).attr("href"));
+    targetScriollOffset = target.data("scroll-offset");
+    if (typeof targetScriollOffset !== typeof undefined && targetScriollOffset !== false) {
+        var position = target.offset().top - targetScriollOffset;
+    } else {
+        var position = target.offset().top;
+    }
+    jQuery("body, html").animate({
+        scrollTop: position
+    });
+});
