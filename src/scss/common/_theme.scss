@@ -232,3 +232,24 @@ p.error-message {
         margin-right: -12px;
     }
 }
+
+// filter tab nav
+.filter-tab-btn{
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    line-height: 14px;
+    padding: 10px 0px;
+    color: $dark;
+    display: block;
+    transition: 0.4s all ease-in-out;
+    white-space: nowrap;
+    opacity: 0.4;
+    margin-right: 40px;
+    text-transform: uppercase;
+
+    &.active,
+    &:hover{
+        opacity: 1;
+        color: $dark;
+    }
+}
