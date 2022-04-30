@@ -291,6 +291,15 @@
 
 // testimonial page
 .hero-testimonial{
+    background-image: url("../images/general/location-bg-icons.svg");
+    background-repeat: no-repeat;
+    background-position: top -40px right 20px;
+    background-size: contain;
+
+    @include media-breakpoint-down(md) {
+        background-position: top 70px right -200px;
+    }
+
     h2{
         font-size: 45px;
         
