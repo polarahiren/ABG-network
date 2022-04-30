@@ -399,3 +399,37 @@
     }
 }
 // END testimonial page
+
+
+
+// news page
+.news-hero-section{
+    .news-banner{
+        height: 330px;
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    .btn-secondary:hover{
+        border-color: $secondary !important;
+    }
+
+    @include media-breakpoint-down(md) {
+        .container{
+            background-color: $primary;
+        }
+        .news-box{
+            border-radius: 0px;
+        }
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+// END news page
