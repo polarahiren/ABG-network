@@ -1,19 +1,6 @@
-.same-height-carousel .slick-track {
-    display: flex;
-}
-
-.same-height-carousel .slick-track .slick-slide {
-    height: auto;
-}
-
-.same-height-carousel .slick-track .slick-slide > div,
-.same-height-carousel .slick-track .slick-slide > div > div {
-    height: 100%;
-}
-
 
 .slick-slider:not(.slick-initialized) .slick-track {
-    display: flex;
+    display: flex !important;
 }
 
 
